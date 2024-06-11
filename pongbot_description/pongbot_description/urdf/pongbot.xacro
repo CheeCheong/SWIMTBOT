@@ -1,0 +1,240 @@
+<?xml version="1.0" ?>
+<robot name="pongbot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find pongbot_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find pongbot_description)/urdf/pongbot.trans" />
+<xacro:include filename="$(find pongbot_description)/urdf/pongbot.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="20"/>
+    <inertia ixx="808.254731" iyy="900.453782" izz="496.327433" ixy="-0.0" iyz="128.494196" ixz="1e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find pongbot_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="blue"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find pongbot_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="anthena_link_1">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.65"/>
+    <inertia ixx="0.004182" iyy="0.004488" izz="0.001811" ixy="0.0" iyz="-0.0" ixz="-0.000791"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.26218 0.560114 -1.669523" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find pongbot_description)/meshes/anthena_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.26218 0.560114 -1.669523" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find pongbot_description)/meshes/anthena_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="head_link_1">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="3"/>
+    <inertia ixx="14.707539" iyy="37.183145" izz="42.175614" ixy="-0.040836" iyz="-0.028194" ixz="-0.046689"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0675 0.709437 -1.319523" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find pongbot_description)/meshes/head_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="red"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0675 0.709437 -1.319523" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find pongbot_description)/meshes/head_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="armL_link_1">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="3"/>
+    <inertia ixx="5.853631" iyy="4.853082" izz="1.732494" ixy="-0.045403" iyz="-0.582125" ixz="-0.343273"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.6675 0.713553 -0.956524" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find pongbot_description)/meshes/armL_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="yellow"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.6675 0.713553 -0.956524" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find pongbot_description)/meshes/armL_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheelB_link_1">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="30"/>
+    <inertia ixx="50.719663" iyy="30.054976" izz="30.054976" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0675 0.009437 -0.269523" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find pongbot_description)/meshes/wheelB_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="black"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0675 0.009437 -0.269523" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find pongbot_description)/meshes/wheelB_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheelL_link_1">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="20"/>
+    <inertia ixx="50.719663" iyy="30.054976" izz="30.054976" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.3675 0.709437 -0.269523" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find pongbot_description)/meshes/wheelL_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="black"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.3675 0.709437 -0.269523" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find pongbot_description)/meshes/wheelL_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheelR_link_1">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="20"/>
+    <inertia ixx="50.719663" iyy="30.054976" izz="30.054976" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.2325 0.709437 -0.269523" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find pongbot_description)/meshes/wheelR_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="black"/>
+  </visual>
+  <collision>
+    <origin xyz="0.2325 0.709437 -0.269523" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find pongbot_description)/meshes/wheelR_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="armR_link_1">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="3"/>
+    <inertia ixx="5.853631" iyy="4.853082" izz="1.732494" ixy="0.045403" iyz="-0.582125" ixz="0.343273"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.5325 0.713553 -0.956524" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find pongbot_description)/meshes/armR_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="yellow"/>
+  </visual>
+  <collision>
+    <origin xyz="0.5325 0.713553 -0.956524" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find pongbot_description)/meshes/armR_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="anthena_link" type="continuous">
+  <origin xyz="0.19468 0.149323 0.35" rpy="0 0 0"/>
+  <parent link="head_link_1"/>
+  <child link="anthena_link_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="armL_link" type="fixed">
+  <origin xyz="0.6675 -0.713553 0.956524" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="armL_link_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="armR_link" type="fixed">
+  <origin xyz="-0.5325 -0.713553 0.956524" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="armR_link_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="wheelB_link" type="continuous">
+  <origin xyz="0.0675 -0.009437 0.269523" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="wheelB_link_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="wheelL_link" type="continuous">
+  <origin xyz="0.3675 -0.709437 0.269523" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="wheelL_link_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="wheelR_link" type="continuous">
+  <origin xyz="-0.2325 -0.709437 0.269523" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="wheelR_link_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="head_link" type="fixed">
+  <origin xyz="0.0675 -0.709437 1.319523" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="head_link_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="camera_joint" type="fixed">
+        <parent link="head_link_1"/>
+        <child link="camera_link"/>
+        <origin xyz="0 -0.2 0" rpy="0 0 -1.571"/>
+    </joint>
+
+<link name="camera_link"></link>
+
+<joint name="camera_optical_joint" type="fixed">
+  <parent link="camera_link"/>
+  <child link="camera_link_optical"/>
+  <origin xyz="0 0 0" rpy="0 0 0"/>
+</joint>
+
+<link name="camera_link_optical"></link>
+
+</robot>
