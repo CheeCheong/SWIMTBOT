@@ -1,3 +1,5 @@
+pongbot_description
+
 mkdir -p ~/ros2_swimtbot/src
 cd ~/ros2_swimtbot/src
 git clone https://github.com/CheeCheong/swimTbot.git
