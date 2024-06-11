@@ -1,5 +1,6 @@
 mkdir -p ~/ros2_swimtbot/src
-cd ros2_swimtbot
+cd ~/ros2_swimtbot/src
+git clone
 colcon build
 source ~/ros2_swimtbot/install/setup.bash
 ros2 launch pongbot_description display.launch
