@@ -1,4 +1,4 @@
-# Pongbot Description
+# SWIMTBOT
 
 A brief description of what this project does and who it's for.
 
@@ -6,8 +6,6 @@ A brief description of what this project does and who it's for.
 
 - [Package Name](#package-name)
 - [Steps to Launch the File](#steps-to-launch-the-file)
-- [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ## Package Name
@@ -62,21 +60,6 @@ Follow these steps to set up and launch the pongbot_description package:
     ```bash
     ros2 run teleop_twist_keyboard teleop_twist_keyboard
     ```
-
-## Contributing
-
-Guidelines for contributing to the project:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes.
-4. Commit your changes (`git commit -am 'Add some feature'`).
-5. Push to the branch (`git push origin feature-branch`).
-6. Create a new Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Contact
 
