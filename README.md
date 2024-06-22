@@ -1,68 +1,82 @@
 # SWIMTBOT
 
-A brief description of what this project does and who it's for.
+This project is part of the Robotic + Lab Course (BHM 3943) conducted by Assoc. Prof. Ts. Dr. Muhammad Aizzat Bin Zakaria at Universiti Malaysia Pahang Al-Sultan Abdullah. The course focuses on the design and implementation of an autonomous robotic system using ROS2.
+
+This project is done and supported by the software:
+- Fusion 360
+- Ubuntu 22.04
+- RViz
+- Gazebo
 
 ## Table of Contents
-
 - [Package Name](#package-name)
 - [Steps to Launch the File](#steps-to-launch-the-file)
 - [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
+- [License](#license)
 
 ## Package Name
-
 pongbot_description
 
 ## Steps to Launch the File
 
 Follow these steps to set up and launch the pongbot_description package:
 
-1. Create the necessary directory:
+1. **Create the necessary directory:**
     ```bash
     mkdir -p ~/ros2_swimtbot/src
     ```
-
-2. Navigate to the directory:
+2. **Navigate to the directory:**
     ```bash
     cd ~/ros2_swimtbot/src
     ```
-
-3. Clone the repository:
+3. **Clone the repository:**
     ```bash
     git clone https://github.com/CheeCheong/swimTbot.git
     ```
-
-4. Build the package:
+4. **Build the package:**
     ```bash
     colcon build
     ```
-
-5. Source the setup script:
+5. **Source the setup script:**
     ```bash
     source ~/ros2_swimtbot/install/setup.bash
     ```
-
-6. Launch the display:
+6. **Launch the display:**
     ```bash
     ros2 launch pongbot_description display.launch
     ```
-
-7. Launch RViz with Gazebo:
+7. **Launch RViz with Gazebo:**
     ```bash
     ros2 launch pongbot_description rviz.gazebo.launch.py
     ```
-
-8. Launch RViz with Gazebo and a specific world:
+8. **Launch RViz with Gazebo and a specific world:**
     ```bash
     ros2 launch pongbot_description rviz.gazebo.launch.py world:=./src/pongbot_description/worlds/obstacles.world
     ```
-
-9. Run the teleop twist keyboard:
+9. **Run the teleop twist keyboard:**
     ```bash
     ros2 run teleop_twist_keyboard teleop_twist_keyboard
     ```
 
 ## Contact
-
-Chee Cheong - [wongcc239@gmail.com](mailto:your-email@example.com)
+Chee Cheong - wongcc239@gmail.com
 
 Project Link: [https://github.com/CheeCheong/swimTbot](https://github.com/CheeCheong/swimTbot)
+
+## Acknowledgements
+- **Team Members:**
+  - Chee Cheong
+  - [Add other team member names here]
+
+- **Advisor:**
+  - [Assoc. Prof. Dr. Muhammad Aizzat Bin Zakaria](https://github.com/aizzat)
+
+- **University:**
+  - Universiti Malaysia Pahang Al-Sultan Abdullah
+
+- **Faculty:**
+  - Faculty of Manufacturing and Mechatronic Engineering Technology
+
+## License
+© 2024 SWIMBOT. All rights reserved.
