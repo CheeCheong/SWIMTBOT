@@ -1,6 +1,6 @@
 # SWIMTBOT
 
-This project is part of the Robotic + Lab Course (BHM 3943) conducted by Assoc. Prof. Ts. Dr. Muhammad Aizzat Bin Zakaria at Universiti Malaysia Pahang Al-Sultan Abdullah. The course focuses on the design and implementation of an autonomous robotic system using ROS2.
+This project is part of the Robotic + Lab Course (BHM 3943) supervised by Assoc. Prof. Ts. Dr. Muhammad Aizzat Bin Zakaria at Universiti Malaysia Pahang Al-Sultan Abdullah. The course focuses on the design and implementation of an autonomous robotic system using ROS2.
 
 This project is done and supported by the software:
 - Fusion 360
@@ -66,8 +66,11 @@ Project Link: [https://github.com/CheeCheong/swimTbot](https://github.com/CheeCh
 
 ## Acknowledgements
 - **Team Members:**
-  - Chee Cheong
-  - [Add other team member names here]
+  - [Wong Chee Cheong](https://github.com/CheeCheong)
+  - [Safwan bin Seruji](https://github.com/ichi-maru)
+  - [Mursyied bin Mahazani](https://github.com/MuhamadMursyied)
+  - [Muhamad Izzul Sirhan bin Mohd Rizal]()
+  - [Tuan Muhamad Talhah bin Tuan Ishak](https://github.com/TMTalhah)
 
 - **Advisor:**
   - [Assoc. Prof. Dr. Muhammad Aizzat Bin Zakaria](https://github.com/aizzat)
