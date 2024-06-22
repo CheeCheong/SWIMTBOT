@@ -62,7 +62,7 @@ Follow these steps to set up and launch the pongbot_description package:
 ## Contact
 Chee Cheong - wongcc239@gmail.com
 
-Project Link: [https://github.com/CheeCheong/swimTbot](https://github.com/CheeCheong/SWIMTBOT)
+Project Link: [https://github.com/CheeCheong/SWIMTBOT](https://github.com/CheeCheong/SWIMTBOT)
 
 ## Acknowledgements
 - **Team Members:**
