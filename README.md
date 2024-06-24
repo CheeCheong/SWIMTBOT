@@ -69,7 +69,7 @@ Project Link: [https://github.com/CheeCheong/SWIMTBOT](https://github.com/CheeCh
   - [Wong Chee Cheong](https://github.com/CheeCheong)
   - [Safwan bin Seruji](https://github.com/ichi-maru)
   - [Muhamad Mursyied bin Mahazani](https://github.com/MuhamadMursyied)
-  - [Muhamad Izzul Sirhan bin Mohd Rizal]()
+  - [Muhamad Izzul Sirhan bin Mohd Rizal](https://github.com/Izzul99-tech)
   - [Tuan Muhamad Talhah bin Tuan Ishak](https://github.com/TMTalhah)
 
 - **Advisor:**
